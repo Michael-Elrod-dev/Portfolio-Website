@@ -1,6 +1,5 @@
 # Portfolio Website
 
-## Home Page Screenshot
 ![Website](https://github.com/Michael-Elrod-dev/Portfolio-Website/blob/main/images/Homepage.png)
 
 ## Styles and Scripts
