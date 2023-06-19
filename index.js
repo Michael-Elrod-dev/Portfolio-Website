@@ -21,7 +21,6 @@ const soundTrack = (soundState) => {
 }
 
 // Play music functionality
-
 const btnBars = document.querySelector('.bars')
 const btnTimes = document.querySelector('.times')
 const SideNav = document.querySelector('.aside')
@@ -41,7 +40,6 @@ const myFunc = (navCondition) => {
   }
 }
 
-// Part 1 javascript functionality ends here
 $(document).ready(function () {
   if (
     !$('#myCanvas').tagcanvas(
@@ -61,75 +59,75 @@ $(document).ready(function () {
   }
 })
 
-// Contact section functionality starts here. The FInal part
+// Initialize EmailJS
+emailjs.init('g5oS2WA-c4W4YJxbd');
 
+// Contact section
 const nameInput = document.querySelector('.name')
 const emailInput = document.querySelector('.email')
 const subjectInput = document.querySelector('.subject')
 const textareaInput = document.querySelector('.textarea')
-
 const contactForm = document.querySelector('.contact-form')
 
 contactForm.addEventListener('submit', (evt) => {
-  evt.preventDefault()
-  validateInput()
+  evt.preventDefault();
+  validateInput();
 })
 
 const validateInput = () => {
-  let email = emailInput.value
-  let textarea = textareaInput.value
+  let email = emailInput.value;
+  let textarea = textareaInput.value;
 
   if (!email && !textarea) {
-    setError(emailInput.parentElement)
-    setError(textareaInput.parentElement)
-    showMessage('Please fill in the required inputs')
+    setError(emailInput.parentElement);
+    setError(textareaInput.parentElement);
+    showMessage('Please fill in the required inputs', 'red');
   } else if (!email && textarea) {
-    setError(emailInput.parentElement)
-    showMessage("Oops Email can't be empty")
+    setError(emailInput.parentElement);
+    showMessage("Oops! Email can't be empty", 'red');
   } else if (!textarea && email) {
-    setError(textareaInput.parentElement)
-    showMessage('Please provide a message')
+    setError(textareaInput.parentElement);
+    showMessage('Please provide a message', 'red');
   } else if (email && textarea) {
     emailjs.sendForm(
-      'service_rvlqach',
-      'template_d32ix5s',
-      contactForm,
-      'lD25U1N6WN3XbKSFV',
-    )
-    setSuccess(emailInput.parentElement)
-    setSuccess(textareaInput.parentElement)
-    showMessage('Message sent successfully', 'green')
-    textareaInput.value = ''
-    emailInput.value = ''
-    nameInput.value = ''
-    subjectInput.value = ''
+      'service_hj9qz9c',
+      'template_fp4ekd8',
+      contactForm
+    ).then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      setSuccess(emailInput.parentElement);
+      setSuccess(textareaInput.parentElement);
+      showMessage('Message sent successfully', 'green');
+      textareaInput.value = '';
+      emailInput.value = '';
+      nameInput.value = '';
+      subjectInput.value = '';
+    }, function(error) {
+      console.log('FAILED...', error);
+      showMessage('Failed to send message', 'red');
+    });
   }
 }
 
 const setError = (input) => {
-  if (input.classList.contains('success')) {
-    input.classList.remove('success')
-  } else {
-    input.classList.add('error')
-  }
+  input.classList.remove('success');
+  input.classList.add('error');
 }
+
 const setSuccess = (input) => {
-  if (input.classList.contains('error')) {
-    input.classList.remove('error')
-  } else {
-    input.classList.add('success')
-  }
+  input.classList.remove('error');
+  input.classList.add('success');
 }
 
 const messageDiv = document.querySelector('.message')
-const showMessage = (message, updateColor) => {
+const showMessage = (message, color) => {
   const divContent = document.createElement('div')
   divContent.textContent = message
   divContent.classList.add('message-content')
-  divContent.style.backgroundColor = updateColor
+  divContent.style.backgroundColor = color
   messageDiv.prepend(divContent)
 
-  messageDiv.style.transform = `translate(${(0, 0)}%)`
+  messageDiv.style.transform = `translate(0, 0)`
   setTimeout(() => {
     divContent.classList.add('hide')
     divContent.addEventListener('transitionend', () => {
@@ -137,6 +135,8 @@ const showMessage = (message, updateColor) => {
     })
   }, 5000)
 }
+
+
 
 // Get the titles that open the modals and the clickable images
 var clickables = [...document.getElementsByTagName('h5'), ...document.getElementsByClassName('magic-wall_item')];

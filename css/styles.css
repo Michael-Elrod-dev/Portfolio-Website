@@ -50,7 +50,7 @@ body {
   display: none;
 }
 
-/* header section starts here */
+/* header section */
 .main-header {
   width: 100%;
   height: 3vh;
@@ -75,7 +75,7 @@ body {
   margin: auto;
 }
 
-/* nav section starts here */
+/* nav section */
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -103,7 +103,6 @@ body {
   top: 25%;
   background-color: #2d2d2e;
 }
-
 .social-icons {
   list-style: none;
   display: flex;
@@ -262,6 +261,7 @@ body {
 .text-zone-4 p {
   font-size: 16px;
   line-height: 1.5;
+  margin-right: 250px;
   padding-left: 7.3rem;
 }
 .fake-magicwall {
@@ -347,14 +347,14 @@ body {
   color: #08fdd8;
 }
 
-/* blog section starts here */
-.section-blog {
+/* card section starts here */
+.section-card {
   padding-top: 100px;
   width: 85%;
   margin: 100px auto 0;
   position: relative;
 }
-.blog-articles {
+.card-articles {
   padding-top: 75px;
   display: flex;
   justify-content: space-between;
@@ -375,14 +375,14 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-.blog-post-title h5 a {
+.card-post-title h5 a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
   display: block;
   margin: 15px 0;
 }
-.blog-post-title h5 a:hover {
+.card-post-title h5 a:hover {
   color: #08fdd8;
 }
 /* The Modal (background) */
@@ -446,7 +446,6 @@ body {
   width: 100%;
   position: relative;
 }
-
 .form-input-group input,
 textarea {
   width: 100%;
@@ -474,7 +473,6 @@ textarea {
   cursor: pointer;
   color: #8a8484;
 }
-
 .form-input-group input + span::after,
 .form-input-group textarea + span::after {
   content: '';
@@ -490,13 +488,11 @@ textarea {
 .form-input-group textarea:focus + span::after {
   width: 100%;
 }
-
 .error input,
 .error textarea {
   border-bottom: 2px solid red;
   transition: all 0.2s linear;
 }
-
 .success input,
 .success textarea {
   border-bottom: 2px solid green;
@@ -521,11 +517,9 @@ textarea {
   transition: opacity 550ms ease-in-out;
   margin-bottom: 5px;
 }
-
 .message-content.hide {
   opacity: 0;
 }
-
 .google-map {
   width: 100%;
   position: relative;
@@ -539,7 +533,7 @@ textarea {
   background-color: #000;
   color: #f3f3f3;
   position: absolute;
-  top: 70px;
+  top: 100px;
   left: 40px;
   padding: 20px;
   backdrop-filter: blur(70%);
@@ -662,12 +656,12 @@ textarea {
     margin-right: 20%;
   }
 
-  /* media query for blog section */
-  .section-blog {
+  /* media query for card section */
+  .section-card {
     width: 90%;
     margin: 100px auto 0;
   }
-  .blog-articles {
+  .card-articles {
     width: 90%;
     margin: 0 0 0 auto;
     flex-flow: row wrap;
@@ -676,7 +670,7 @@ textarea {
     width: 320px;
     height: 270px;
   }
-  .blog-post-title h5 a {
+  .card-post-title h5 a {
     font-size: 1.7rem;
     line-height: 2rem;
   }
