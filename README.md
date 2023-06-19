@@ -1,7 +1,7 @@
 # Portfolio Website
 
 ## Home Page Screenshot
-![Website](https://github.com/Your-Username/Portfolio-Website/blob/master/assets/images/PortfolioScreenshot.png)
+![Website](https://github.com/Michael-Elrod-dev/Portfolio-Website/blob/main/images/Homepage.png)
 
 ## Styles and Scripts
 All style sheets and JavaScript files used in this project can be found in the `/assets/css/` and `/assets/js/` folders respectively.
