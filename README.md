@@ -1,10 +1,9 @@
 # Portfolio Website
 
-## Home Page Screenshot
 ![Website](https://github.com/Michael-Elrod-dev/Portfolio-Website/blob/main/images/Homepage.png)
 
 ## Styles and Scripts
-All style sheets and JavaScript files used in this project can be found in the `/assets/css/` and `/assets/js/` folders respectively.
+All style sheets and JavaScript files used in this project can be found in the `/css/styles.css` and `index.js` files respectively.
 
 ## Software Versions
 - HTML Version: HTML 5
