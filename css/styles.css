@@ -413,7 +413,7 @@ body {
 .modal-content p {
   color: #a2a2a3;
 }
-/* The Close Button */
+/* The Close Buttons */
 .close {
   color: #a2a2a3;
   float: right;
@@ -424,6 +424,43 @@ body {
 .close:focus {
   color: #08fdd8;
   text-decoration: none;
+  cursor: pointer;
+}
+/* The Close Button */
+.close1 {
+  color: #a2a2a3;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 3;
+  position: relative;
+}
+.close1:hover,
+.close1:focus {
+  color: #08fdd8 !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Resume Modal Content */
+.resume-modal-content {
+  background-color: #1d1d1d;
+  margin: 5% auto; /* adjust these values to change the position */
+  padding: 20px;
+  box-shadow: 0 0 5px 5px #161616;
+  width: 70%; /* adjust this value to change the size */
+}
+/* Resume Modal Heading */
+.resume-modal-content h1 {
+  font-size: 40px !important;
+  letter-spacing: normal !important;
+  color: #08fdd8;
+}
+/* Resume Modal Text */
+.resume-modal-content p {
+  color: #a2a2a3;
+}
+.resume-button {
   cursor: pointer;
 }
 

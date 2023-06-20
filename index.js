@@ -93,7 +93,7 @@ const validateInput = () => {
       'service_hj9qz9c',
       'template_fp4ekd8',
       contactForm
-    ).then(function(response) {
+    ).then(function (response) {
       console.log('SUCCESS!', response.status, response.text);
       setSuccess(emailInput.parentElement);
       setSuccess(textareaInput.parentElement);
@@ -102,7 +102,7 @@ const validateInput = () => {
       emailInput.value = '';
       nameInput.value = '';
       subjectInput.value = '';
-    }, function(error) {
+    }, function (error) {
       console.log('FAILED...', error);
       showMessage('Failed to send message', 'red');
     });
@@ -135,8 +135,6 @@ const showMessage = (message, color) => {
     })
   }, 5000)
 }
-
-
 
 // Get the titles that open the modals and the clickable images
 var clickables = [...document.getElementsByTagName('h5'), ...document.getElementsByClassName('magic-wall_item')];
@@ -192,6 +190,33 @@ for (let i = 0; i < clickables.length; i++) {
       if (event.target == modal) {
         modal.style.display = "none";
         document.body.removeChild(modal); // Remove the modal from the DOM
+      }
+    }
+  }
+}
+
+window.onload = function () {
+  // Get the modal
+  var resumeModal = document.getElementById('resumeModal');
+
+  // When the user clicks on the button, open the modal 
+  window.openResumeModal = function () {
+    resumeModal.style.display = "block";
+
+    // Get the <span> element that closes the modal
+    var spans = document.getElementsByClassName('close1')[0];
+    console.log(spans);
+
+    // When the user clicks on <span> (x), close the modal
+    spans.onclick = function () {
+      resumeModal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal content, close the modal
+    resumeModal.onclick = function (event) {
+      // If the direct parent of the target is not the modal content, close the modal
+      if (event.target == resumeModal) {
+        resumeModal.style.display = "none";
       }
     }
   }
