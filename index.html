@@ -95,6 +95,32 @@
         </div>
       </div>
 
+      <!-- Chat API -->
+      <input type="text" id="input" />
+      <button onclick="sendMessage()">Send</button>
+      <p id="response"></p>
+      <script>
+        async function sendMessage() {
+          const input = document.getElementById('input').value;
+          const responseField = document.getElementById('response');
+
+          try {
+            const response = await fetch('http://localhost:5000/chat', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ text: input }),
+            });
+            const message = await response.text();
+            responseField.innerText = message;
+          } catch (err) {
+            console.error(err);
+            responseField.innerText = 'Error sending message';
+          }
+        }
+      </script>
+
       <!-- scroll -->
       <div class="scroll-down">
         <span>scroll down</span>
@@ -262,8 +288,7 @@
         simple and efficient C++ implementation of the N-Queens problem solver. It uses a backtracking 
         algorithm to find all possible solutions for placing N queens on an N x N chessboard, such that 
         no two queens threaten each other.<br /><br /> The full project can be viewed on my GitHub below."
-          data-img="images/Nqueens.png" id="modal1" 
-          data-url="https://github.com/Michael-Elrod-dev/N-Queens-Problem">
+          data-img="images/Nqueens.png" id="modal1" data-url="https://github.com/Michael-Elrod-dev/N-Queens-Problem">
           <img src="images/Nqueens.png" alt="image" />
           <div class="hover-content"></div>
           <a href="#" class="colorbox"></a>
@@ -275,7 +300,8 @@
         that implements a Stringset class utilizing a hash table with chaining to handle collisions. It is 
         used to perform operations like inserting words, finding words, and removing words from a stringset. 
         The program is also designed to handle spell checking, suggesting words that are only one letter away 
-        from a given word.<br /><br /> The full project can be viewed on my GitHub below." data-img="images/SpellChecker.webp" id="modal1"
+        from a given word.<br /><br /> The full project can be viewed on my GitHub below."
+          data-img="images/SpellChecker.webp" id="modal1"
           data-url="https://github.com/Michael-Elrod-dev/Spell-Checker-Using-a-Hash-Table">
           <img src="images/SpellChecker.webp" alt="image" />
           <div class="hover-content"></div>
