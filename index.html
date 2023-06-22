@@ -94,33 +94,7 @@
           </p>
         </div>
       </div>
-
-      <!-- Chat API -->
-      <input type="text" id="input" />
-      <button onclick="sendMessage()">Send</button>
-      <p id="response"></p>
-      <script>
-        async function sendMessage() {
-          const input = document.getElementById('input').value;
-          const responseField = document.getElementById('response');
-
-          try {
-            const response = await fetch('http://localhost:5000/chat', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ text: input }),
-            });
-            const message = await response.text();
-            responseField.innerText = message;
-          } catch (err) {
-            console.error(err);
-            responseField.innerText = 'Error sending message';
-          }
-        }
-      </script>
-
+      
       <!-- scroll -->
       <div class="scroll-down">
         <span>scroll down</span>
