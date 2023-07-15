@@ -137,7 +137,7 @@ const showMessage = (message, color) => {
 }
 
 // Get the titles that open the modals and the clickable images
-var clickables = [...document.getElementsByTagName('h5'), ...document.getElementsByClassName('magic-wall_item')];
+var clickables = [...document.getElementsByClassName('magic-wall_item'), ...document.getElementsByClassName('post-articles')];
 
 for (let i = 0; i < clickables.length; i++) {
   let clickable = clickables[i];
@@ -146,10 +146,13 @@ for (let i = 0; i < clickables.length; i++) {
   clickable.onclick = function (event) {
     event.preventDefault(); // This will prevent the "#" href from triggering
 
-    let title = this.dataset.title || this.innerText || 'Default title';
-    let text = this.dataset.text || 'Default text';
-    let img = this.dataset.img || 'Default image path';
-    let url = this.dataset.url || '#'; // Default link
+    // Check if the clicked element belongs to the 'post-articles' class
+    let isPostArticles = this.classList.contains('post-articles');
+
+    let title = isPostArticles ? this.querySelector('h5 a').innerText : (this.dataset.title || this.innerText || 'Default title');
+    let text = isPostArticles ? this.querySelector('.card-post-title').dataset.text : (this.dataset.text || 'Default text');
+    let img = isPostArticles ? 'images/Black.png' : (this.dataset.img || 'images/Black.png'); // Default image for 'post-articles'
+    let url = isPostArticles ? '#' : (this.dataset.url || 'https://github.com/Michael-Elrod-dev'); // Default link
 
     // Create the modal
     let modal = document.createElement('div');
