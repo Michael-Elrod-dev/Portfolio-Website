@@ -32,6 +32,3 @@ This file contains the JavaScript code that adds interactivity to the website. I
 
 ### Fonts
 The `/webfonts/` directory contains all the font files used in the website such along with some extras.
-
-## Future Work
-In the future, more features can be added to the website such as a blog section, and more interactive UI elements. It would also be beneficial to incorporate analytics to gather visitor data and gain insights about user behavior on the website.
