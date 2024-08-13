@@ -1,34 +1,36 @@
-# Portfolio Website
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Website](https://github.com/Michael-Elrod-dev/Portfolio-Website/blob/main/images/Homepage.png)
+## Getting Started
 
-## Styles and Scripts
-All style sheets and JavaScript files used in this project can be found in the `/css/styles.css` and `index.js` files respectively.
+First, run the development server:
 
-## Software Versions
-- HTML Version: HTML 5
-- CSS Version: CSS 3
-- JavaScript Version: ES6  
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Viewing the Website
-You can view the website HERE (coming soon).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Motivation
-The creation of this portfolio website serves as an online showcase of the technical and creative skills I've used to create many different projects throughout both my academic journey and my free time. It contains detailed information about my academic achievements, work experience, skills, projects, as well as a more generalized version of my resume.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Design Reasoning
-The website structure is designed with simplicity and user friendliness in mind. It is divided into various sections to provide a clear and concise representation of all the information it contains. The website is also responsive to ensure a smooth user experience on various devices and screen sizes.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Work Flow
+## Learn More
 
-### index.html
-This file serves as the entry point and contains the HTML markup for the website.
+To learn more about Next.js, take a look at the following resources:
 
-### style.css
-Located in the `/css/` directory, this file contains the CSS styles that are applied throughout the website.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### index.js
-This file contains the JavaScript code that adds interactivity to the website. It includes scripts for handling form submissions, navigation bar functionality, animations, and other interactive elements of the website.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Fonts
-The `/webfonts/` directory contains all the font files used in the website such along with some extras.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
