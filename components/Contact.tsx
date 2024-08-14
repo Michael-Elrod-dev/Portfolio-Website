@@ -41,7 +41,7 @@ export default function Contact() {
             <p className="text-lg mb-4">
               I'm currently pursuing software development opportunities - especially
               in San Jose or the Bay Area. However, if you have any questions or would like
-              more information, please dont hesitate to use the form below or you can reach out to me on LinkedIn.
+              more information, please don't hesitate to use the form below or you can reach out to me on LinkedIn.
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -83,23 +83,14 @@ export default function Contact() {
             </form>
           </div>
           <div className="lg:w-1/2 lg:pl-12">
-            <div className="aspect-w-16 aspect-h-9">
+            <div className="h-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.3204839980725!2d-82.85085058481826!3d34.67681998043892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88585e6756d4e10d%3A0x5f4c5bec99c96abf!2s111%20University%20Village%20Dr%2C%20Central%2C%20SC%2029630!5e0!3m2!1sen!2sus!4v1628909076855!5m2!1sen!2sus"
-                width="600"
-                height="450"
-                style={{ border: 0 }}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.3892843635485!2d-82.84686258480514!3d34.675036689371176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88585e1135ab658d%3A0x8d3219cb792a8e56!2sClemson%20University!5e0!3m2!1sen!2sus!4v1723669004227!5m2!1sen!2sus"
+                style={{ border: 0, width: "100%", height: "100%" }}
                 allowFullScreen
                 loading="lazy"
-                className="w-full h-full rounded-lg"
+                className="rounded-lg"
               />
-            </div>
-            <div className="mt-4">
-              <p className="font-semibold">Michael Elrod</p>
-              <p>111 University Village Dr.</p>
-              <p>Unit G</p>
-              <p>Clemson, SC 29715</p>
-              <p>MichaelElrod.Dev@gmail.com</p>
             </div>
           </div>
         </div>
