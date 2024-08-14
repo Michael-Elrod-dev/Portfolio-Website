@@ -36,8 +36,8 @@ export default function Home() {
         </section>
 
         <About />
-        <Skills />
         <Portfolio />
+        <Skills />
         <Contact />
       </main>
     </Layout>
