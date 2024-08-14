@@ -1,4 +1,5 @@
 // components/Portfolio.tsx
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
 const projects = [

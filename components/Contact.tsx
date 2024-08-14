@@ -1,4 +1,5 @@
 // components/Contact.tsx
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
