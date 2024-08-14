@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Machine Learning",
     description: "Implemented multiple regression models, K-means clustering, logistic regression, and SVM classifiers. Utilized cross-validation, feature scaling, and gradient descent optimization.",
-    image: "/images/machine-learning.png",
+    image: "/images/machine-learning.jpg",
     github: "https://github.com/Michael-Elrod-dev/Machine-Learning-Examples"
   },
   {
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Software Architecture",
     description: "Implemented Model-View-Controller, Observer pattern, and Decorator techniques to study and apply various software architecture principles.",
-    image: "/images/software-architecture.png",
+    image: "/images/software-architecture.jpg",
     github: "https://github.com/Michael-Elrod-dev/Software-Architecture/tree/main"
   }
 ]
