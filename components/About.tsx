@@ -1,41 +1,43 @@
 // components/About.tsx
+import Image from 'next/image'
+
 export default function About() {
-    return (
-      <section id="about" className="py-20 bg-gray-950">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-8 text-blue-400">About Me</h2>
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-8 lg:mb-0">
-              <p className="text-lg mb-4">
-                Im currently pursuing my Bachelor of Science in Computer Science from
-                Clemson University and will continue for another year to obtain my
-                Masters degree. I have a broad range of interests within the
-                development field, but I have a strong passion for AI technology and
-                machine learning.
-              </p>
-              <p className="text-lg mb-4">
-                When I was younger, I enjoyed developing my skills as a graphic designer,
-                but in 2019, I found the inspiration to continue my education and pursue
-                a career as a developer in the tech industry.
-              </p>
-              <p className="text-lg">
-                I am eager to begin my professional journey, and I am especially
-                interested in roles that will allow me to continue to learn and grow
-                while contributing to meaningful and innovative projects.
-              </p>
-            </div>
-            <div className="lg:w-1/2 lg:pl-12">
-              <h3 className="text-2xl font-semibold mb-4">Technology I havve worked with:</h3>
-              <div className="flex flex-wrap">
-                {['HTML/CSS', 'RESTful API', 'AWS', 'Python', 'JavaScript', 'Git', 'Java', 'C/C++', 'A.I.', 'Machine Learning', 'Flutter'].map((tech) => (
-                  <span key={tech} className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm mr-2 mb-2">
-                    {tech}
-                  </span>
-                ))}
-              </div>
+  return (
+    <section id="about" className="py-20 bg-gray-950">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="lg:w-1/2 mb-8 lg:mb-0">
+            <h2 className="text-4xl font-bold mb-8 text-blue-400">About Me</h2>
+            <p className="text-lg mb-4">
+              I recently graduated from Clemson University with a Bachelor's in Computer 
+              Science, and I'm currently pursuing my Master's at the same institution.
+              During my undergraduate years, I focused primarily on designing, developing,
+              and deploying scalable cloud-based applications. Towards the end of my
+              undergraduate studies and into my graduate work, I've developed a strong
+              interest in Artificial Intelligence, particularly Machine Learning.
+            </p>
+            <p className="text-lg mb-4">
+              My passion lies in exploring innovative ways to integrate modern machine
+              learning techniques to enhance user experiences in both mobile and web-based
+              applications. I'm excited to apply and expand my skills in a professional
+              setting, and I'm particularly interested in roles that offer opportunities
+              for continuous learning and growth while contributing to meaningful and
+              cutting-edge projects.
+            </p>
+          </div>
+          <div className="lg:w-1/2 flex justify-center">
+            <div className="rounded-full overflow-hidden w-128 h-128 border-4 border-blue-400">
+              <Image
+                src="/images/Headshot.png"
+                alt="Michael Elrod"
+                width={350}
+                height={350}
+                objectFit="cover"
+              />
             </div>
           </div>
         </div>
-      </section>
-    )
-  }
+      </div>
+    </section>
+  )
+}

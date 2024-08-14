@@ -12,8 +12,8 @@ export default function Header() {
           <ul className="flex space-x-8">
             <li><Link href="/#home" className="hover:text-blue-300">Home</Link></li>
             <li><Link href="/#about" className="hover:text-blue-300">About</Link></li>
-            <li><Link href="/#portfolio" className="hover:text-blue-300">Portfolio</Link></li>
             <li><Link href="/#skills" className="hover:text-blue-300">Skills</Link></li>
+            <li><Link href="/#portfolio" className="hover:text-blue-300">Portfolio</Link></li>
             <li><Link href="/#contact" className="hover:text-blue-300">Contact</Link></li>
           </ul>
         </nav>

@@ -1,17 +1,35 @@
 // components/Contact.tsx
 'use client';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Add your form submission logic here
-    console.log({ name, email, message })
-  }
+    e.preventDefault();
+    setStatus('Sending...');
+
+    emailjs.send(
+      'service_609uksg',
+      'template_guflehl',
+      { name, email, message },
+      'rAeFYEa0Wqgx8Df1o'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setStatus('Message sent successfully!');
+        setName('');
+        setEmail('');
+        setMessage('');
+      }, (error) => {
+        console.log('FAILED...', error);
+        setStatus('Failed to send message. Please try again.');
+      });
+  };
 
   return (
     <section id="contact" className="py-20">
@@ -20,9 +38,9 @@ export default function Contact() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <p className="text-lg mb-4">
-              Im currently pursuing software development opportunities - especially
+              I'm currently pursuing software development opportunities - especially
               in San Jose or the Bay Area. However, if you have any questions or would like
-              more information, please dont hesitate to use the form below.
+              more information, please dont hesitate to use the form below or you can reach out to me on LinkedIn.
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
