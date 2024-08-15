@@ -29,7 +29,7 @@ export default function About() {
           <div className="lg:w-1/2 flex justify-center">
             <div className="rounded-full overflow-hidden w-128 h-128 border-4 border-blue-400">
               <Image
-                src="/images/headshot.png"
+                src="/images/my-headshot.png"
                 alt="Michael Elrod"
                 width={350}
                 height={350}
