@@ -26,7 +26,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <a href="mailto:MichaelElrod.Dev@gmail.com" className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">Contact Me</a>
                   <br />
-                  <a href="/images/Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">Resume</a>
+                  <a href="/images/resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">Resume</a>
                 </div>
               </div>
               <div className="w-1/2 flex items-center justify-center">

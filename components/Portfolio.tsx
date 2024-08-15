@@ -16,6 +16,18 @@ const projects = [
     github: "https://github.com/Michael-Elrod-dev/Machine-Learning-Examples"
   },
   {
+    title: "STEM Mobile Apllication",
+    description: "Collaborated with the Blue Ridge Innovation and Entrepreneurship Foundation to develop a STEM-focused educational mobile app to provide an accessible learning platform for underprivileged students at The Dream Center in Easley, SC as a part of the NIWC STEM Outreach Program",
+    image: "/images/mock-up.png",
+    github: "https://github.com/Michael-Elrod-dev/BRIEF-Mobile-App-API"
+  },
+  {
+    title: "Project Management Web Application",
+    description: "Designed and developed a full-stack project management web application hosted on AWS Amplify for Independence County Contracting to efficiently create, organize, and share project plans, creating a more scalable business model.",
+    image: "/images/web-design.png",
+    github: "https://github.com/Michael-Elrod-dev/JM-Web-Application"
+  },
+  {
     title: "Computer Vision",
     description: "Implemented Canny edge detection, facial detection system, panorama image stitching, and optical flow algorithms for various computer vision tasks.",
     image: "/images/computer-vision.png",
