@@ -1,6 +1,6 @@
 // components/About.tsx
 /* eslint-disable react/no-unescaped-entities */
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 export default function About() {
   return (
