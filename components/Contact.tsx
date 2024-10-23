@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-8 text-blue-400">Contact Me</h2>
+        <h2 className="text-4xl font-bold mb-8 text-red-600">Contact Me</h2>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <p className="text-lg mb-4">
@@ -45,39 +45,39 @@ export default function Contact() {
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300">Name</label>
+                <label htmlFor="name" className="block text-sm font-medium text-zinc-300">Name</label>
                 <input
                   type="text"
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white"
+                  className="mt-1 block w-full rounded-md bg-zinc-700 border-gray-600 text-white"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email</label>
+                <label htmlFor="email" className="block text-sm font-medium text-zinc-300">Email</label>
                 <input
                   type="email"
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white"
+                  className="mt-1 block w-full rounded-md bg-zinc-700 border-gray-600 text-white"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium text-zinc-300">Message</label>
                 <textarea
                   id="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows={4}
-                  className="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white"
+                  className="mt-1 block w-full rounded-md bg-zinc-700 border-gray-600 text-white"
                   required
                 ></textarea>
               </div>
-              <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+              <button type="submit" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300">
                 Send Message
               </button>
             </form>

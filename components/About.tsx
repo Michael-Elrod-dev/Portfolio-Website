@@ -4,11 +4,11 @@ import Image from "next/legacy/image"
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gray-950">
+    <section id="about" className="py-20 bg-zinc-900">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <h2 className="text-4xl font-bold mb-8 text-blue-400">About Me</h2>
+            <h2 className="text-4xl font-bold mb-8 text-red-600">About Me</h2>
             <p className="text-lg mb-4">
               I recently graduated from Clemson University with a Bachelor's in Computer 
               Science, and I'm currently pursuing my Master's at the same institution.
@@ -27,7 +27,7 @@ export default function About() {
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center">
-            <div className="rounded-full overflow-hidden w-128 h-128 border-4 border-blue-400">
+            <div className="rounded-full overflow-hidden w-128 h-128 border-4 border-red-600">
               <Image
                 src="/images/my-headshot.png"
                 alt="Michael Elrod"
