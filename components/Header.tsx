@@ -10,7 +10,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'portfolio', 'contact'];
+      const sections = ['home', 'about', 'skills', 'portfolio', 'experience', 'contact'];
       const scrollPosition = window.scrollY + window.innerHeight;
       const pageHeight = document.documentElement.scrollHeight;
 
@@ -46,7 +46,7 @@ export default function Header() {
         </div>
         <nav>
           <ul className="flex space-x-8">
-            {['home', 'about', 'skills', 'portfolio', 'contact'].map((section) => (
+            {['home', 'about', 'skills', 'portfolio', 'experience', 'contact'].map((section) => (
               <li key={section}>
                 <Link 
                   href={`/#${section}`} 
