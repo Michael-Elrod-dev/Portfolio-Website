@@ -4,13 +4,13 @@ import Image from "next/legacy/image"
 
 const projects = [
   {
-    title: "Deep Reinforcement Learning",
-    description: "Implemented various Deep Q-Networks (DQN) using Python & PyTorch to solve single and multi-agent environments through Open AI's Gymnasium & MiniGrid. Applied solutions to quick time events in video games.",
+    title: "Neural Networks for Classification & Path Finding",
+    description: "Implemented various Deep Q-Networks & Graph Neural Networks using Python & PyTorch to solve single and multi-agent environments through Open AI's Gymnasium & MiniGrid. Applied solutions to quick time events in video games using real time image classification.",
     image: "/images/deep-reinforcement-learning.png",
     github: "https://github.com/Michael-Elrod-dev/Deep-Reinforcement-Learning"
   },
   {
-    title: "Machine Learning",
+    title: "Machine Learning Models",
     description: "Implemented multiple regression models, K-means clustering, logistic regression, and SVM classifiers. Utilized cross-validation, feature scaling, and gradient descent optimization.",
     image: "/images/machine-learning.png",
     github: "https://github.com/Michael-Elrod-dev/Machine-Learning-Examples"
@@ -22,8 +22,8 @@ const projects = [
     github: "https://github.com/Michael-Elrod-dev/BRIEF-Mobile-App-API"
   },
   {
-    title: "Project Management Web Application",
-    description: "Designed and developed a full-stack project management web application hosted on AWS Amplify for Independence County Contracting to efficiently create, organize, and share project plans, creating a more scalable business model.",
+    title: "Project Management Application",
+    description: "Architected and deployed a full-stack solution serving 100+ daily users, optimizing cost-efficiency through strategic client-side rendering with Next.js and AWS RDS with MySQL. Built and engineered robust cloud infrastructure using AWS Amplify for CI/CD.",
     image: "/images/web-design.png",
     github: "https://github.com/Michael-Elrod-dev/JM-Web-Application"
   },
@@ -46,8 +46,8 @@ const projects = [
     github: "https://github.com/Michael-Elrod-dev/SQL-Database-Application"
   },
   {
-    title: "Interactive Software",
-    description: "Developed two separate interactive game engines using C++ & Python, leveraging object-oriented programming principles and design patterns for optimized performance.",
+    title: "Game Engine Architecture",
+    description: "Engineered two complete game engines from scratch in C++ and Python, implementing core systems including physics, rendering, and entity management. Optimized for 60+ FPS with 200+ simultaneous entities using component-based architecture.",
     image: "/images/interactive-software.png",
     github: "https://github.com/Michael-Elrod-dev/2D-Game-Engines"
   },
