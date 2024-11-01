@@ -1,28 +1,29 @@
 // components/Skills.tsx
+
 const skills = [
   {
     category: "Languages",
-    items: ["Python", "C / C++", "Java", "TypeScript", "SQL", "JavaScript"]
+    items: ["Python", "C/C++", "Java", "TypeScript", "SQL", "JavaScript"]
   },
   {
     category: "AI & Machine Learning",
-    items: ["PyTorch", "Reinforcement Learning", "Deep Learning", "Computer Vision", "Data Mining"]
+    items: ["PyTorch", "Deep Learning", "Computer Vision", "OpenCV", "YOLO", "Graph Neural Networks"]
   },
   {
     category: "Front-end",
-    items: ["React", "Figma", "HTML/CSS", "Flutter", "Tailwind", "Next.js"]
+    items: ["React", "Next.js", "HTML/CSS", "Flutter", "Tailwind"]
   },
   {
     category: "Back-end",
-    items: ["Node.js", "Express.js", "RESTful API", "Postman"]
+    items: ["RESTful API", "MySQL", "PostgreSQL", "DynamoDB", "AWS RDS"]
   },
   {
     category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "S3", "EC2", "Lambda", "API Gateway", "CloudWatch", "CI/CD", "Git"]
+    items: ["AWS Amplify", "Docker", "Git", "CI/CD", "Lambda", "EC2", "S3", "API Gateway", "CloudWatch"]
   },
   {
-    category: "Databases & Tools",
-    items: ["DynamoDB", "RDS", "MySQL", "Microsoft SQL", "Jupyter Notebook"]
+    category: "Development Tools",
+    items: ["Linux", "Postman", "Figma", "Jira", "Confluence", "Jupyter Notebook"]
   }
 ]
 
